@@ -6,6 +6,6 @@
 
     <fragment
         android:id="@+id/products"
-        android:name="com.example.movies.fragments.ProductsFragment"
+        android:name="com.example.movies.fragments.MoviesFragment"
         android:label="Products" />
 </navigation>

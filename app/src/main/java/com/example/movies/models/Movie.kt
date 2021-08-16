@@ -1,6 +1,6 @@
-package com.example.movies.network
+package com.example.movies.models
 
-data class Results (
+data class Movie (
 
     val adult : Boolean,
     val backdrop_path : String,
@@ -12,7 +12,7 @@ data class Results (
     val popularity : Double,
     val poster_path : String,
     val release_date : String,
-    val title : String,
+    var title : String = "https://image.tmdb.org/t/p/original",
     val video : Boolean,
     val vote_average : Double,
     val vote_count : Int

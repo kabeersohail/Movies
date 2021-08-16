@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/kabeer/AndroidStudioProjects/Movies/app/src/main/res/drawable/ic_broken_image.xml" value="0.2703125" />
+        <entry key="..\:/Users/kabeer/AndroidStudioProjects/Movies/app/src/main/res/drawable/ic_connection_error.xml" value="0.2703125" />
+        <entry key="..\:/Users/kabeer/AndroidStudioProjects/Movies/app/src/main/res/drawable/loading_img.xml" value="0.1" />
         <entry key="..\:/Users/kabeer/AndroidStudioProjects/Movies/app/src/main/res/layout/fragment_products.xml" value="0.1598731884057971" />
         <entry key="..\:/Users/kabeer/AndroidStudioProjects/Movies/app/src/main/res/layout/fragment_products_fragment.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/kabeer/AndroidStudioProjects/Movies/app/src/main/res/layout/test.xml" value="0.1" />
       </map>
     </option>
   </component>
@@ -13,5 +17,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1598731884057971" />
+      </ProjectState>
+    </option>
   </component>
 </project>
