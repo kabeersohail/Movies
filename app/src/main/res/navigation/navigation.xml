@@ -6,6 +6,24 @@
 
     <fragment
         android:id="@+id/products"
-        android:name="com.example.movies.fragments.MoviesFragment"
-        android:label="Products" />
+        android:name="com.example.movies.moviefragment.MoviesFragment"
+        android:label="Products" >
+
+        <action
+            android:id="@+id/action_showDetail"
+            app:destination="@id/movieDetailFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.example.movies.moviedetailfragment.MovieDetailFragment"
+        android:label="MovieDetailFragment">
+
+        <argument
+            android:name="selectedProperty"
+            app:argType="com.example.movies.models.Movie"/>
+
+
+
+    </fragment>
 </navigation>

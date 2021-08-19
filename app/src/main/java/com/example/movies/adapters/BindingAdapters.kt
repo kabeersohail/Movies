@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.movies.R
-import com.example.movies.fragments.MovieApiStatus
+import com.example.movies.moviefragment.MovieApiStatus
 import com.example.movies.models.Movie
 
 

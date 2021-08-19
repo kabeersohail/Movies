@@ -25,8 +25,8 @@ private val retrofit = Retrofit.Builder()
     .build()
 
 interface MoviesApiService{
-    @GET("movie/popular?api_key=cbd4b92662bd89da04fdd8e3e2fef7cb&language=en-US&page=3")
-    fun getMovies() : Call<Data>
+    @GET("movie/popular?api_key=cbd4b92662bd89da04fdd8e3e2fef7cb&language=en-US")
+    fun getMovies(@Query("page") page: Int) : Call<Data>
 }
 
 object MoviesApi{

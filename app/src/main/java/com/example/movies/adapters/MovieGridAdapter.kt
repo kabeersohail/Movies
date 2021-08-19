@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.movies.databinding.TestBinding
 import com.example.movies.models.Movie
 
-class MovieGridAdapter : ListAdapter<Movie,MovieGridAdapter.MovieViewHolder>(Diffcallback){
+class MovieGridAdapter(private val onClickListener: OnClickListener) : ListAdapter<Movie,MovieGridAdapter.MovieViewHolder>(Diffcallback){
     class MovieViewHolder(private var binding : TestBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(movie: Movie){
             binding.movie = movie
@@ -35,7 +35,21 @@ class MovieGridAdapter : ListAdapter<Movie,MovieGridAdapter.MovieViewHolder>(Dif
     }
 
     override fun onBindViewHolder(holder: MovieGridAdapter.MovieViewHolder, position: Int) {
+//        if(position==(itemCount -1)){
+//            Log.d("TAG","LAST ITEM")
+//
+//        }
         val movie = getItem(position)
+        holder.itemView.setOnClickListener{
+            onClickListener.onClick(movie)
+        }
         holder.bind(movie)
     }
+
+    class OnClickListener(val clickListener: (movie: Movie) -> Unit) {
+        fun onClick(movie: Movie) = clickListener(movie)
+    }
+
+
+
 }
